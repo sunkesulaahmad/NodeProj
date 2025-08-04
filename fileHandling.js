@@ -1,4 +1,5 @@
 const fs = require("fs");
+const os = require("os");
 
 // Sync
 // fs.writeFileSync('./test.txt', "Sync Test File Created");
@@ -31,10 +32,11 @@ console.log(`Date: ${Date.now()}`);
 // Delete an existing file
 
 // fs.unlinkSync('./copy.txt');
-console.log(fs.statSync('./test.txt'));
+// console.log(fs.statSync('./test.txt'));
 
 // fs.mkdirSync('my-doc/a', {recursive: true});
 
+console.log("Os Details =>", os.cpus().length);
 
 
 
